@@ -1,0 +1,30 @@
+https://tldr.sh/ -> gives usage eg for commands
+man     -> tells about every other command
+ls -> gives list of files
+ls -1 -> list files in new line
+ls -l -> list files with lots of details
+mkdir -> creates folders
+mkdir -p "path" -> creates nested folders recursively
+mkdir fold1 fold2 -> creates multiple folders in one go
+cd -> change directory
+rm -> removes folders which dont have files
+rm -rf -> removes folders and its contents(DANGEROUS)
+"cd -" -> to go to previsously chosen directory
+pwd -> prints present working directory
+mv file1 file2 pathToFolder -> moves selected files to given folder
+cp sourceFile newFile -> creates copy of given sourceFile
+cp -r sourceFolder newFolder -> creates copy of a folder with its contents recursively
+touch file -> Creates and empty file. If the file already exists, it opens the file in write mode and the timestamp of the file is updated.
+
+find command
+use
+-type f
+to search only files, or
+-type l
+to only search symbolic links.
+-name -> case sensitive
+-iname -> case insensitive
+
+find . -name "*.txt" -> searches for files with given extension in complete directory tree and gives there relative path
+find . -type d -name "junk*" -> find directories with matching expression in current tree
+find folder1 folder2 -name filename.txt -> for searching in multiple trees
