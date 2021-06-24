@@ -28,3 +28,23 @@ to only search symbolic links.
 find . -name "*.txt" -> searches for files with given extension in complete directory tree and gives there relative path
 find . -type d -name "junk*" -> find directories with matching expression in current tree
 find folder1 folder2 -name filename.txt -> for searching in multiple trees
+find . -type d -name 
+
+#Compressing a file
+gzip file.ext -> compresses
+gzip -d file.ext.gz -> decompress
+
+## for specifiying output names
+gzip -c file.ext > compressed_file.ext.gz 
+gzip -c -d file.ext.gz > uncompressed_file.ext 
+
+## for specifying level of compression
+### 1 -> fastest(worst)
+### 9 -> slowest(best)
+gzip -9 -c file.ext > compressed_file.ext.gz
+
+## compressing all files in a directory(DANGEROUS)
+gzip -r a_folder
+
+# tar
+
